@@ -1,0 +1,89 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página 2</title>
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpCWgvki7HCNl8qbhHFNGfJicCGIEZhvy2SQ&usqp=CAU');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .quadro {
+            background-color: #8e44ad; /* Roxo escuro */
+            width: 70%; /* Largura do quadro */
+            max-width: 960px; /* Largura máxima do quadro (16:9) */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 4cm; /* Espaço de 4cm a partir do topo */
+        }
+
+        .texto {
+            font-size: 20px; /* Tamanho menor para o texto abaixo */
+            color: white; /* Cor do texto dentro do quadro */
+        }
+
+        /* Estilo para a primeira frase em negrito e maior */
+        .primeira-frase {
+            font-size: 26px; /* Tamanho maior */
+            font-weight: bold; /* Negrito */
+            color: white; /* Cor branca */
+        }
+
+        /* Estilos para o vídeo de fundo */
+        .video-container {
+            margin-top: 1.5cm; /* Espaço de 1,5cm abaixo do quadro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%; /* Largura do vídeo */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        iframe {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Estilo para o botão "Continuar" */
+        .botao-continuar {
+            background-color: #3498db; /* Azul */
+            color: white; /* Letras brancas */
+            padding: 15px 30px; /* Aumentado o tamanho */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px; /* Aumentado o tamanho da fonte */
+            position: fixed;
+            bottom: 5%; /* Distância do fundo da página */
+            right: 5%; /* Distância da direita da página */
+        }
+    </style>
+</head>
+<body>
+    <div class="quadro">
+        <p class="primeira-frase">Olá, Alice Chrispim Andrade ❤️</p>
+        <p class="texto">Após acessar o coração do Rafael, ele lhe deixou um recado.</p>
+        <p class="texto">Sei que isso é clichê e que te surpreender é difícil, mas gostaria de dizer que eu te amo muito e que toda essa fase ruim irá passar e que nossa felicidade virá.</p>
+        <p class="texto">Eu te amo minha princesa, você é tudo na minha vida e quando estou bem contigo eu não consigo ficar triste com mais nada, queria que você soubesse que eu te quero pra sempre e vou buscar construir isso com você, com diálogo, amor e carinho. Te amo esguia❤️</p>
+    </div>
+
+    <!-- Botão "Continuar" para a terceira página -->
+    <a href="pagina3.html" class="botao-continuar">Continuar</a>
+    
+    <!-- Novo vídeo do YouTube incorporado em um quadrado abaixo do quadro -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EQaQoYuWOzI" frameborder="0" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

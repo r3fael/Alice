@@ -1,0 +1,101 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página 3</title>
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZkC-TJzmfAdmdvCufd4Su1_vtTOMFLTu3sg&usqp=CAU');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .celular {
+            background-color: rgba(255, 255, 255, 0.3); /* Fundo branco com transparência */
+            width: 50%; /* Largura do celular */
+            max-width: 400px; /* Largura máxima do celular */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .titulo {
+            font-size: 24px;
+            color: white; /* Cor do título */
+        }
+
+        .texto-superior {
+            background-color: #27ae60; /* Fundo verde */
+            color: white; /* Cor da letra */
+            font-size: 18px;
+            font-weight: bold; /* Texto em negrito */
+            padding: 10px;
+            border-radius: 10px;
+            width: 70%; /* Largura do retângulo de texto */
+            max-width: 600px; /* Largura máxima do retângulo de texto */
+            text-align: center;
+            margin: 20px auto; /* Centralizar o retângulo */
+        }
+
+        .opcoes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; /* Espaço entre as opções */
+        }
+
+        .opcao {
+            background-color: transparent; /* Fundo transparente */
+            width: 150px; /* Largura das opções */
+            height: 150px; /* Altura das opções */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white; /* Borda branca */
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer; /* Cursor ao passar por cima das opções */
+            color: white; /* Cor do texto nas opções */
+            font-weight: bold; /* Texto em negrito */
+        }
+
+        .opcao:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Fundo com transparência ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="celular">
+        <p class="titulo">Seu presente de aniversário❤️</p>
+        <div class="texto-superior">Seu presente de aniversário❤️</div>
+        <div class="opcoes">
+            <div class="opcao" style="background-color: #8e44ad;">Gloss da Dior</div>
+            <div class="opcao" style="background-color: #ff6b6b;">Gift Card da Shein</div>
+            <div class="opcao" style="background-color: #c0392b;">Pica ou outra coisa que você escolher</div>
+        </div>
+    </div>
+
+    <script>
+        // Função para redirecionar para a página 4
+        function redirecionarParaPagina4() {
+            window.location.href = 'pagina4.html'; // Substitua 'pagina4.html' pelo nome correto do arquivo da página 4
+        }
+
+        // Adicione um ouvinte de evento de clique a cada opção
+        var opcoes = document.querySelectorAll(".opcao");
+        opcoes.forEach(function (opcao) {
+            opcao.addEventListener("click", function () {
+                // Chame a função para redirecionar para a página 4 quando uma opção for selecionada
+                redirecionarParaPagina4();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página 1</title>
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSzt4Quy500zmm6KuO8XZ9DdQDIUAYSfdhJg&usqp=CAU');
+            background-size: cover; /* Para cobrir toda a área do body */
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Para fixar a imagem no lugar */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0; /* Remover margens padrão */
+        }
+
+        .smartphone {
+            background-color: #34495e; /* Azul escuro */
+            width: 300px;
+            height: 500px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .circle {
+            width: 200px; /* Tamanho maior para a foto */
+            height: 200px; /* Tamanho maior para a foto */
+            background-color: #3498db; /* Cor do círculo */
+            border-radius: 50%;
+            margin: 20px auto 20px; /* Posicionamento mais abaixo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle img {
+            width: 100%; /* Para garantir que a imagem preencha o círculo */
+            height: 100%; /* Para garantir que a imagem preencha o círculo */
+            border-radius: 50%;
+            object-fit: cover; /* Redimensionar a imagem para cobrir o círculo */
+        }
+
+        .text {
+            font-size: 24px; /* Aumentar o tamanho da fonte */
+            color: white;
+            margin-top: 10px; /* Espaço acima do texto */
+        }
+
+        /* Estilos para caixas de login */
+        .login-box {
+            margin-top: 20px;
+        }
+
+        .input-label {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .login-button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="smartphone">
+        <div class="circle">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXWcLkbds3pePIGawceeNR-AeySGKjuNEhtg&usqp=CAU" alt="Sua Imagem">
+        </div>
+        <div class="text">Coração do Rafael❤️</div>
+
+        <!-- Caixas de login -->
+        <div class="login-box">
+            <label for="login" class="input-label">Login:</label>
+            <input type="text" id="login" class="input-field" placeholder="alice">
+        </div>
+        <div class="login-box">
+            <label for="senha" class="input-label">Senha:</label>
+            <input type="password" id="senha" class="input-field" placeholder="amordaminhavida">
+        </div>
+        <button class="login-button" onclick="redirecionarParaPagina2()">Entrar</button>
+
+        <!-- Outro conteúdo que você queira adicionar na página 1 -->
+    </div>
+
+    <script>
+    function redirecionarParaPagina2() {
+        // Obter os valores digitados nos campos de login e senha
+        var login = document.getElementById("login").value;
+        var senha = document.getElementById("senha").value;
+
+        // Verificar se o login e senha correspondem às sugestões
+        if (login === "alice" && senha === "amordaminhavida") {
+            // Redirecionar para a segunda página em uma nova guia
+            window.open("pagina2.html", "_blank");
+        } else {
+            alert("Login ou senha incorretos. Por favor, verifique e tente novamente.");
+        }
+    }
+    </script>
+</body>
+</html>
